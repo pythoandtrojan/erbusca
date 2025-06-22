@@ -1,4 +1,3 @@
-
 {
     "ecommerce": {
         "MercadoLivre": {
@@ -395,6 +394,196 @@
             "check_methods": [
                 {"type": "status_code", "expect": 200},
                 {"type": "content", "pattern": "Profile not found"}
+            ]
+        },
+
+        {
+    "streaming": {
+        "Netflix": {
+            "url": "https://www.netflix.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page Not Found"}
+            ]
+        },
+        "Spotify": {
+            "url": "https://open.spotify.com/user/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Couldn't find that user"}
+            ]
+        },
+        "DisneyPlus": {
+            "url": "https://www.disneyplus.com/profiles/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "jogos": {
+        "Steam": {
+            "url": "https://steamcommunity.com/id/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "The specified profile could not be found"}
+            ]
+        },
+        "EpicGames": {
+            "url": "https://www.epicgames.com/account/users/{}/",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Origin": {
+            "url": "https://www.origin.com/brazil/pt-br/profile/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "tecnologia": {
+        "GitLab": {
+            "url": "https://gitlab.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Bitbucket": {
+            "url": "https://bitbucket.org/{}/",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "StackOverflow": {
+            "url": "https://stackoverflow.com/users/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "financas": {
+        "PayPal": {
+            "url": "https://www.paypal.com/paypalme/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "PicPay": {
+            "url": "https://picpay.me/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "MercadoPago": {
+            "url": "https://www.mercadopago.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "fotografia": {
+        "500px": {
+            "url": "https://500px.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "VSCO": {
+            "url": "https://vsco.co/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Behance": {
+            "url": "https://www.behance.net/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "outros": {
+        "OnlyFans": {
+            "url": "https://onlyfans.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Patreon": {
+            "url": "https://www.patreon.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Goodreads": {
+            "url": "https://www.goodreads.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "DeviantArt": {
+            "url": "https://{}.deviantart.com",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Slideshare": {
+            "url": "https://www.slideshare.net/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Fiverr": {
+            "url": "https://www.fiverr.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Kickstarter": {
+            "url": "https://www.kickstarter.com/profile/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Gumroad": {
+            "url": "https://gumroad.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Letterboxd": {
+            "url": "https://letterboxd.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Trakt": {
+            "url": "https://trakt.tv/users/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "ReverbNation": {
+            "url": "https://www.reverbnation.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Bandcamp": {
+            "url": "https://bandcamp.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Codepen": {
+            "url": "https://codepen.io/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Dribbble": {
+            "url": "https://dribbble.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
             ]
         }
     }
