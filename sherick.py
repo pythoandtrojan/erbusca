@@ -38,7 +38,7 @@ USER_AGENTS = [
     'Mozilla/5.0 (Linux; Android 10; SM-A505FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36'
 ]
 
-def load_sites(filename="sites/sites.json"):
+def load_sites(filename="sites.json"):
     """Carrega os sites do arquivo JSON com estrutura categorizada"""
     try:
         with open(filename, "r", encoding="utf-8") as f:
