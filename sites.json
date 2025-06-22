@@ -184,7 +184,6 @@
             ]
         },
 
-        {
     "redes_sociais": {
         "YouTube": {
             "url": "https://www.youtube.com/{}",
@@ -397,7 +396,6 @@
             ]
         },
 
-        {
     "streaming": {
         "Netflix": {
             "url": "https://www.netflix.com/{}",
