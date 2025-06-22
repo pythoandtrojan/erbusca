@@ -183,6 +183,219 @@
             "check_methods": [
                 {"type": "status_code", "expect": 200}
             ]
+        },
+
+        {
+    "redes_sociais": {
+        "YouTube": {
+            "url": "https://www.youtube.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This channel does not exist"}
+            ]
+        },
+        "Kwai": {
+            "url": "https://www.kwai.com/@{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "TikTok": {
+            "url": "https://www.tiktok.com/@{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Couldn't find this account"}
+            ]
+        },
+        "Reddit": {
+            "url": "https://www.reddit.com/user/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Sorry, nobody on Reddit goes by that name"}
+            ]
+        },
+        "Facebook": {
+            "url": "https://www.facebook.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This page isn't available"}
+            ]
+        },
+        "Instagram": {
+            "url": "https://www.instagram.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Sorry, this page isn't available"},
+                {"type": "redirect", "pattern": "accounts/login"}
+            ]
+        },
+        "Twitter": {
+            "url": "https://twitter.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This account doesn’t exist"}
+            ]
+        },
+        "LinkedIn": {
+            "url": "https://www.linkedin.com/in/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This profile is not available"}
+            ]
+        },
+        "Pinterest": {
+            "url": "https://www.pinterest.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "Twitch": {
+            "url": "https://www.twitch.tv/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This channel is unavailable"}
+            ]
+        },
+        "Telegram": {
+            "url": "https://t.me/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This username doesn't exist"}
+            ]
+        },
+        "Snapchat": {
+            "url": "https://www.snapchat.com/add/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Sorry, we couldn't find that user"}
+            ]
+        },
+        "VK": {
+            "url": "https://vk.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This page has been deleted"}
+            ]
+        },
+        "Weibo": {
+            "url": "https://weibo.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This user doesn't exist"}
+            ]
+        },
+        "Tumblr": {
+            "url": "https://{}.tumblr.com",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "There's nothing here"}
+            ]
+        },
+        "Flickr": {
+            "url": "https://www.flickr.com/photos/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "Medium": {
+            "url": "https://medium.com/@{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This page doesn't exist"}
+            ]
+        },
+        "Quora": {
+            "url": "https://www.quora.com/profile/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page Not Found"}
+            ]
+        },
+        "Discord": {
+            "url": "https://discord.com/users/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "SoundCloud": {
+            "url": "https://soundcloud.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "Mixer": {
+            "url": "https://mixer.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Broadcaster not found"}
+            ]
+        },
+        "Vimeo": {
+            "url": "https://vimeo.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "This user does not exist"}
+            ]
+        },
+        "Dailymotion": {
+            "url": "https://www.dailymotion.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "Likee": {
+            "url": "https://likee.com/@{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "User not found"}
+            ]
+        },
+        "BigoLive": {
+            "url": "https://www.bigo.tv/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "User does not exist"}
+            ]
+        },
+        "Douyin": {
+            "url": "https://www.douyin.com/user/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "User not found"}
+            ]
+        },
+        "Triller": {
+            "url": "https://triller.co/@{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Profile not found"}
+            ]
+        },
+        "Tagged": {
+            "url": "https://www.tagged.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Profile not found"}
+            ]
+        },
+        "Meetup": {
+            "url": "https://www.meetup.com/{}/",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Page not found"}
+            ]
+        },
+        "Nextdoor": {
+            "url": "https://nextdoor.com/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Profile not found"}
+            ]
         }
     }
 }
