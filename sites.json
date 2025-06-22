@@ -1,1 +1,188 @@
 
+{
+    "ecommerce": {
+        "MercadoLivre": {
+            "url": "https://www.mercadolivre.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Parece que esta página não existe"}
+            ]
+        },
+        "Americanas": {
+            "url": "https://www.americanas.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "redirect", "pattern": "pagina-nao-encontrada"}
+            ]
+        },
+        "Submarino": {
+            "url": "https://www.submarino.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "MagazineLuiza": {
+            "url": "https://www.magazineluiza.com.br/perfil/{}/",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Página não encontrada"}
+            ]
+        },
+        "CasasBahia": {
+            "url": "https://www.casasbahia.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "AmazonBR": {
+            "url": "https://www.amazon.com.br/gp/profile/amzn1.account.{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "AliExpress": {
+            "url": "https://pt.aliexpress.com/store/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Sorry, the store is not available"}
+            ]
+        },
+        "ShopeeBR": {
+            "url": "https://shopee.com.br/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Sorry, this page is not available"}
+            ]
+        },
+        "Dafiti": {
+            "url": "https://www.dafiti.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Netshoes": {
+            "url": "https://www.netshoes.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "moda": {
+        "Renner": {
+            "url": "https://www.lojasrenner.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Riachuelo": {
+            "url": "https://www.riachuelo.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "C&A": {
+            "url": "https://www.cea.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Zara": {
+            "url": "https://www.zara.com/br/perfil/{}.html",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Product not found"}
+            ]
+        },
+        "H&M": {
+            "url": "https://www2.hm.com/br_pt/perfil/{}.html",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Shein": {
+            "url": "https://br.shein.com/perfil/{}.html",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "eletronicos": {
+        "Kabum": {
+            "url": "https://www.kabum.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Pichau": {
+            "url": "https://www.pichau.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Terabyte": {
+            "url": "https://www.terabyteshop.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "FastShop": {
+            "url": "https://www.fastshop.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "varejo": {
+        "Carrefour": {
+            "url": "https://www.carrefour.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Extra": {
+            "url": "https://www.extra.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "PaoDeAcucar": {
+            "url": "https://www.paodeacucar.com/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "Petz": {
+            "url": "https://www.petz.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    },
+    "nichos": {
+        "Elo7": {
+            "url": "https://www.elo7.com.br/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "EtsyBR": {
+            "url": "https://www.etsy.com/br/shop/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200},
+                {"type": "content", "pattern": "Shop not found"}
+            ]
+        },
+        "Shoppe": {
+            "url": "https://shoppe.com.br/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        },
+        "MadeiraMadeira": {
+            "url": "https://www.madeiramadeira.com.br/perfil/{}",
+            "check_methods": [
+                {"type": "status_code", "expect": 200}
+            ]
+        }
+    }
+}
