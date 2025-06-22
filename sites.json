@@ -239,7 +239,7 @@
   "About.me": {
     "url": "https://about.me/{}",
     "error_code": 404
-  }.
+  },
   "Amazon": {
     "url": "https://www.amazon.com/hz/wishlist/ls/{}",
     "error_code": 404
