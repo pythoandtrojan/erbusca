@@ -5,7 +5,7 @@
 Para começar a usar imediatamente, execute no seu Termux:
 
 ```bash
-git clone https://github.com/seu-usuario/sherlock-termux.git
-cd sherlock-termux
+git clone https://github.com/pythoandtrojan/erbusca/blob/main/erbusca.py
+cd erbusca
 chmod +x sherlock.py
-pip install -r requirements.txt  # Se houver dependências
+pip install -r requirements.txt 
