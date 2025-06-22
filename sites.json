@@ -585,6 +585,130 @@
             "check_methods": [
                 {"type": "status_code", "expect": 200}
             ]
-        }
+        },
+  "adult": {
+    "Pornhub": {
+      "url": "https://www.pornhub.com/users/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200},
+        {"type": "content", "pattern": "This user has not uploaded any videos"}
+      ]
+    },
+    "XVideos": {
+      "url": "https://www.xvideos.com/profiles/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200},
+        {"type": "content", "pattern": "hasn't uploaded any video"}
+      ]
+    },
+    "XHamster": {
+      "url": "https://xhamster.com/users/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200},
+        {"type": "content", "pattern": "No videos"}
+      ]
+    },
+    "Redtube": {
+      "url": "https://www.redtube.com/users/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "SpankBang": {
+      "url": "https://spankbang.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "XNXX": {
+      "url": "https://www.xnxx.com/profiles/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "ManyVids": {
+      "url": "https://www.manyvids.com/Profile/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Fansly": {
+      "url": "https://fansly.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "OnlyFans": {
+      "url": "https://onlyfans.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "CamSoda": {
+      "url": "https://www.camsoda.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Chaturbate": {
+      "url": "https://chaturbate.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "MyFreeCams": {
+      "url": "https://profiles.myfreecams.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "LoyalFans": {
+      "url": "https://www.loyalfans.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "IsMyGirl": {
+      "url": "https://www.ismygirl.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "ModelHub": {
+      "url": "https://www.modelhub.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Eporner": {
+      "url": "https://www.eporner.com/user/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Motherless": {
+      "url": "https://www.motherless.com/u/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Nudostar": {
+      "url": "https://nudostar.com/profile/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Fapello": {
+      "url": "https://fapello.com/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
+    },
+    "Smutty": {
+      "url": "https://smutty.com/user/{}",
+      "check_methods": [
+        {"type": "status_code", "expect": 200}
+      ]
     }
+  }
 }
