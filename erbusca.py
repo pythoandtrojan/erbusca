@@ -11,8 +11,6 @@ import os
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# [...] (o resto das constantes e funções permanecem iguais até a função check_username)
-
 def check_username(username, selected_sites=None, quiet=False, 
                   timeout=10, max_workers=10, proxy=None,
                   print_all=False, no_save=False, txt_only=False, json_only=False):
